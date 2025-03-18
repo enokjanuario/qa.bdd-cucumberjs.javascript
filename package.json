@@ -1,0 +1,15 @@
+{
+  "name": "qa.bdd-cucumberjs.javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "keywords": [],
+  "author": "enokjanuario",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "chai": "^4.3.7"
+  }
+}
