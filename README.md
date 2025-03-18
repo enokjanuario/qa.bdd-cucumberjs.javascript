@@ -45,3 +45,21 @@ O erro comum que Elias Nogueira aponta é reduzir o BDD apenas à automação de
    ```
    npm test
    ```
+## Estrutura do projeto
+
+- `src/pessoa.js`: Contém a implementação da classe Pessoa com o método ehMaiorDeIdade.
+- `features/pessoa.feature`: Contém os cenários de comportamento escritos em Gherkin.
+- `features/step_definitions/pessoa.steps.js`: Contém a implementação dos passos (steps) que conectam os cenários Gherkin com o código JavaScript.
+- `.github/workflows/tests.yml`: Configuração da pipeline de CI para executar os testes automaticamente no GitHub Actions.
+
+## Cenários implementados
+
+Os testes BDD implementam os seguintes cenários:
+
+1. Verificar se pessoa com 18 anos pode consumir bebida alcoólica
+2. Verificar se pessoa com mais de 18 anos pode consumir bebida alcoólica
+3. Verificar se pessoa com 17 anos não pode consumir bebida alcoólica
+4. Verificar se pessoa com menos de 17 anos não pode consumir bebida alcoólica
+5. Esquema de cenário para testar múltiplas idades
+
+Todos os cenários foram escritos em linguagem Gherkin declarativa, focando no comportamento esperado do sistema e não nos detalhes de implementação.
